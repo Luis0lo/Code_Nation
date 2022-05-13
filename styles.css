@@ -36,6 +36,14 @@ ul > li > a {
   color: white;
   text-decoration: none;
 }
+/* _____________________________________HOME */
+.home-bg-img {
+  background-image: url("assets/home.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
 
 /* _____________________________________FOOTER */
 footer {
