@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+nav {
+  background-color: rgb(14, 54, 90);
+  color: white;
+}
+.inner-navbar {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right-navbar {
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+ul > li {
+  margin: 0 1rem;
+}
