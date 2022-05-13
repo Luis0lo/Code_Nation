@@ -1,9 +1,14 @@
+/* _____________________________________GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 1.2rem;
 }
+
+/* _____________________________________NAVBAR */
+
 nav {
   background-color: rgb(14, 54, 90);
   color: white;
@@ -26,4 +31,21 @@ nav {
 }
 ul > li {
   margin: 0 1rem;
+}
+ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* _____________________________________FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(14, 54, 90);
+  color: white;
+}
+footer > div {
+  padding: 1rem;
 }
