@@ -6,6 +6,35 @@
   box-sizing: border-box;
   font-size: 1.2rem;
 }
+/* _____________________________________GENERAL */
+main {
+  position: relative;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.top-bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.5)),
+    url('assets/tirescar.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: white;
+  font-size: 8vw;
+  font-weight: 100;
+  text-shadow: 2px 2px black;
+}
 
 /* _____________________________________NAVBAR */
 
@@ -27,7 +56,6 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 ul > li > a {
@@ -90,31 +118,70 @@ h2 {
 
 /* _____________________________________ABOUT */
 
-/* _____________________________________GENERAL */
-.top-bg-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.5)),
-    url('assets/tirescar.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 20vh;
+/* _____________________________________TOURS */
+
+.card-tour-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  
 }
-h3 {
+.card-tour {
+  margin: 0.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  flex-basis: 18rem;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+}
+.card-tour > h4 {
   color: white;
-  font-size: 8vw;
-  font-weight: 100;
-  text-shadow: 2px 2px black;
+  background-color: rgb(0, 129, 102);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
 }
-main {
-  position: relative;
-  min-height: 100vh;
+.card-tour > .card-tour-inner > ul {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  margin: 0 1rem;
 }
-a {
-  text-decoration: none;
+
+.card-tour > .card-tour-inner > ul > li {
+  font-size: 1rem;
+  border-top: 1px solid;
+  padding: 0.4rem 0;
 }
+.card-tour > .card-tour-inner > ul > li:first-child {
+  border: none;
+}
+.card-tour > button {
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+}
+
+.tour-description {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.card-tour-inner {
+  margin: 0.5rem 1rem;
+}
+.card-tour > button {
+  margin: 0.6rem 1rem;
+  padding: 0.3rem 0;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: rgb(241, 95, 34);
+  border: 1px solid rgb(241, 95, 34);
+}
+.card-tour > button:hover {
+  background-color: rgb(241, 95, 34);
+  color: white;
+}
+
 /* _____________________________________FOOTER */
 footer {
   position: absolute;
