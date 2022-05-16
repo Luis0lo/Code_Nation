@@ -29,22 +29,92 @@ nav {
   flex-wrap: wrap;
   list-style: none;
 }
-ul > li {
-  margin: 0 1rem;
-}
+
 ul > li > a {
   color: white;
-  text-decoration: none;
+  padding: 1rem;
 }
+a:hover {
+  color: black;
+  background-color: white;
+}
+.selected {
+  color: black;
+  background-color: white;
+}
+
 /* _____________________________________HOME */
-.home-bg-img {
-  background-image: url("assets/home.jpg");
+.home-bg-img-container {
+  background-image: url('assets/home.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  padding-left: 3rem;
+}
+h1 {
+  display: inline;
+  background-color: black;
+  padding: 0 1rem;
+}
+h1 > a {
+  color: white;
+}
+h2 {
+  font-size: 7vw;
+  font-weight: 100;
+  text-shadow: 2px 2px black;
+}
+.card-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+.card-icon {
+  margin: 0.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  flex-basis: 18rem;
+}
+.card-icon > h4 {
+  padding: 0.5rem;
+}
+.card-icon > p {
+  font-size: 1rem;
 }
 
+/* _____________________________________ABOUT */
+
+/* _____________________________________GENERAL */
+.top-bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.5)),
+    url('assets/tirescar.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: white;
+  font-size: 8vw;
+  font-weight: 100;
+  text-shadow: 2px 2px black;
+}
+main {
+  position: relative;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
 /* _____________________________________FOOTER */
 footer {
   position: absolute;
