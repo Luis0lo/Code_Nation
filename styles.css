@@ -117,6 +117,31 @@ h2 {
 }
 
 /* _____________________________________ABOUT */
+.about-container{
+  padding: 3rem; 
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.about-description-container{
+  padding-right: 1rem;
+  max-width: 50vw;
+}
+.about-description-container > p {
+  padding-top: 1rem; 
+}
+.img-about-container{
+}
+
+.img-about-container > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* margin-top: -50px; */
+
+}
+
+
 
 /* _____________________________________TOURS */
 
