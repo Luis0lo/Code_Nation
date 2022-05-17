@@ -284,6 +284,16 @@ textarea {
   display: block;
 }
 
+.map {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.map > iframe {
+  max-width: 950px;
+  border-radius: 0.3rem;
+}
+
 /* _____________________________________FOOTER */
 footer {
   /* NEED FIX */
